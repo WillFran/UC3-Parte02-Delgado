@@ -13,8 +13,19 @@ layaut = """
         """
 
 def inicio(request):
+    cursos = ['LP3',
+              'legislacion',
+              'micro',
+              'procesos',
+              'investigacion',
+              'algortimos',
+              'dinamica']
 
-    return render(request, 'inicio.html')
+    return render(request, 'inicio.html',
+    {
+        'titulo':'Inicio',
+        'cursos' : cursos
+    })
 
 def primos(request):
     a=10

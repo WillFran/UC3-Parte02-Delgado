@@ -5,32 +5,13 @@
 {% endblock %}
 
 {% block content %}
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+{% if mensaje %}
+        <p> Mensaje: {{mensaje}} </p>
+    {% else %}
+        <strong>El Mensaje no tiene contenido</strong>
+    {% endif %}
+    <p> <strong> Cursos Registrados: </strong> </p>
+    <p>LP3 legislacion micro procesos investigacion algortimos dinamica</p>
+    <p> <strong> Cursos Registrados: </strong> </p>
+    <p>LP3 <p> legislacion <p> micro <p> procesos <p> investigacion <p> algortimos <p> dinamica</p>
 {% endblock %}
